@@ -94,6 +94,7 @@ const { goodnightCommand } = require('./commands/goodnight');
 const { shayariCommand } = require('./commands/shayari');
 const { rosedayCommand } = require('./commands/roseday');
 const imagineCommand = require('./commands/imagine');
+const removebgcommand = require('./commands/removebg');
 
 
 // Global settings
