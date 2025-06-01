@@ -4,13 +4,13 @@ This is a WhatsApp bot built using the Baileys library for group management, inc
 
 <div align="center"> 
   <a href="https://git.io/typing-svg"> 
-    <img src="https://readme-typing-svg.demolab.com?font=Ribeye&size=50&pause=1000&color=33ff00&center=true&width=910&height=100&lines=Knight-Bot;Coded+By+Nevin" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Ribeye&size=50&pause=1000&color=33ff00&center=true&width=910&height=100&lines=LIGHT-Bot;Coded+By+Nevin" alt="Typing SVG" />
   </a> 
 </div> 
 
 <div align="center"> 
   <a href="https://youtube.com/@mr_unique_hacker"> 
-    <img src="https://github.com/Nevin716/Knightbot-MD-MD/blob/main/assets/bot_image.jpg" alt="LIGHT" height="300"> 
+    <img src="https://github.com/Nevin716/Knightbot-MD-MD/blob/main/assets/bot_image.jpg" alt="Nevin" height="300"> 
   </a> 
 </div>
 
