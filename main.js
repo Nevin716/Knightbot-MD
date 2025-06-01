@@ -93,8 +93,7 @@ const { addCommandReaction, handleAreactCommand } = require('./lib/reactions');
 const { goodnightCommand } = require('./commands/goodnight');
 const { shayariCommand } = require('./commands/shayari');
 const { rosedayCommand } = require('./commands/roseday');
-const imagineCommand = require('./commands/imagine');
-const removebgcommand = require('./commands/removebg');
+const imagineCommand = require('./commands/imagine') ;
 
 
 // Global settings
