@@ -109,7 +109,7 @@ const channelInfo = {
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
             newsletterJid: '120363161513685998@newsletter',
-            newsletterName: 'KnightBot MD',
+            newsletterName: 'Nevin',
             serverMessageId: -1
         }
     }
@@ -156,8 +156,8 @@ async function handleMessages(sock, messageUpdate, printLog) {
             // Only respond occasionally to avoid spam
             if (Math.random() < 0.1) {
                 await sock.sendMessage(chatId, {
-                    text: '❌ You are banned from using the bot. Contact Nevin or an admin to get unbanned.',
-                    ...channelInfo
+                    text: '❌ You are banned from using the bot. Contact Nevin or an admin to get unbanned.'
+            
                 });
             }
             return;
@@ -172,8 +172,8 @@ async function handleMessages(sock, messageUpdate, printLog) {
         /*  // Basic message response in private chat
           if (!isGroup && (userMessage === 'hi' || userMessage === 'hello' || userMessage === 'bot' || userMessage === 'hlo' || userMessage === 'hey' || userMessage === 'bro')) {
               await sock.sendMessage(chatId, {
-                  text: 'Hi, How can I help you?\nYou can use .menu for more info and commands.',
-                  ...channelInfo
+                  text: 'Hi, How can I help you?\nYou can use .menu for more info and commands or contact Nevin.'
+                  
               });
               return;
           } */
@@ -228,8 +228,8 @@ async function handleMessages(sock, messageUpdate, printLog) {
             ) {
                 if (!isSenderAdmin && !message.key.fromMe) {
                     await sock.sendMessage(chatId, {
-                        text: 'Sorry onichan, only group admins can use this command.',
-                        ...channelInfo
+                        text: 'Sorry onichan, only group admins can use this command.'
+                        
                     });
                     return;
                 }
@@ -241,8 +241,8 @@ async function handleMessages(sock, messageUpdate, printLog) {
             // Check if message is from owner (fromMe) or bot itself
             if (!message.key.fromMe) {
                 await sock.sendMessage(chatId, {
-                    text: '❌ This command is only available for my creator Nevin!',
-                    ...channelInfo
+                    text: '❌ This command is only available for my creator Nevin!'
+                    
                 });
                 return;
             }
@@ -293,7 +293,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
                 await unbanCommand(sock, chatId, message);
                 break;
             case userMessage === '.help' || userMessage === '.menu' || userMessage === '.bot' || userMessage === '.list':
-                await helpCommand(sock, chatId, global.channelLink);
+                await helpCommand(sock, chatId, global);
                 break;
             case userMessage === '.sticker' || userMessage === '.s':
                 await stickerCommand(sock, chatId, message);
@@ -328,7 +328,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
                     data = JSON.parse(fs.readFileSync('./data/messageCount.json'));
                 } catch (error) {
                     console.error('Error reading access mode:', error);
-                    await sock.sendMessage(chatId, { text: 'Failed to read bot mode status', ...channelInfo });
+                    await sock.sendMessage(chatId, { text: 'Failed to read bot mode status'});
                     return;
                 }
 
@@ -345,8 +345,8 @@ async function handleMessages(sock, messageUpdate, printLog) {
 
                 if (action !== 'public' && action !== 'private') {
                     await sock.sendMessage(chatId, {
-                        text: 'Usage: .mode public/private\n\nExample:\n.mode public - Allow everyone to use bot\n.mode private - Restrict to owner only',
-                        ...channelInfo
+                        text: 'Usage: .mode public/private\n\nExample:\n.mode public - Allow everyone to use bot\n.mode private - Restrict to owner only'
+                    
                     });
                     return;
                 }
@@ -382,15 +382,15 @@ async function handleMessages(sock, messageUpdate, printLog) {
             case userMessage.startsWith('.antilink'):
                 if (!isGroup) {
                     await sock.sendMessage(chatId, {
-                        text: 'This command can only be used in groups.',
-                        ...channelInfo
+                        text: 'Gandu,This command can only be used in groups.'
+                    
                     });
                     return;
                 }
                 if (!isBotAdmin) {
                     await sock.sendMessage(chatId, {
-                        text: 'Please make the bot and Nevin an admin first.',
-                        ...channelInfo
+                        text: 'Please make the bot and Nevin an admin first.'
+                        
                     });
                     return;
                 }
@@ -822,7 +822,7 @@ async function handleGroupParticipantUpdate(sock, update) {
             // Get welcome message from data
             const data = JSON.parse(fs.readFileSync('./data/userGroupData.json'));
             const welcomeData = data.welcome[id];
-            const welcomeMessage = welcomeData?.message || 'Welcome {user} to the group! 🎉';
+            const welcomeMessage = welcomeData?.message || 'Welcome {user} to the group ~Nevin! 🎉';
 
             // Send welcome message for each new participant
             for (const participant of participants) {
@@ -845,7 +845,7 @@ async function handleGroupParticipantUpdate(sock, update) {
             // Get goodbye message from data
             const data = JSON.parse(fs.readFileSync('./data/userGroupData.json'));
             const goodbyeData = data.goodbye[id];
-            const goodbyeMessage = goodbyeData?.message || 'Goodbye {user} 👋';
+            const goodbyeMessage = goodbyeData?.message || 'Bhag Bhsdike ~With regards Nevin {user} 👋';
 
             // Send goodbye message for each leaving participant
             for (const participant of participants) {
