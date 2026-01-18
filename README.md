@@ -1,4 +1,4 @@
-# 🤖 Knight Bot
+# BHAVY BOT
 
 This is a WhatsApp bot built using the Baileys library for group management, including features like tagging all members, muting/unmuting, and many more. It's designed to help admins efficiently manage WhatsApp groups.
 
@@ -23,7 +23,7 @@ This is a WhatsApp bot built using the Baileys library for group management, inc
 
 ---
 <div>
-  <a href="https://www.thordata.com/products/residential-proxies?ls=YouTube&lk=Knightbot" target="_blank">
+  <a href="https://www.thordata.com/products/residential-proxies?ls=YouTube&lk=Bhavy" target="_blank">
     <img src="assets/thor.png" alt="ThorData Proxies" width="100%" />
   </a>
 </div>
@@ -40,7 +40,7 @@ This is a WhatsApp bot built using the Baileys library for group management, inc
 <br>
 
 <div align="left">
-  <a href="https://www.thordata.com/products/residential-proxies?ls=YouTube&lk=Knightbot" target="_blank">
+  <a href="https://www.thordata.com/products/residential-proxies?ls=YouTube&lk=Bhavybot" target="_blank">
     <img src="https://img.shields.io/badge/Try now-28a745?style=for-the-badge" alt="Try now"/>
   </a>
 </div>
@@ -130,7 +130,7 @@ For further customization and setup guidance, click the button below:
 
 ## 📖 About
 
-The Knight WhatsApp Bot assists group admins by providing them with tools to efficiently manage large WhatsApp groups. The bot uses the Baileys library to interact with the WhatsApp Web API and supports multi-device features.
+The Bhavy WhatsApp Bot assists group admins by providing them with tools to efficiently manage large WhatsApp groups. The bot uses the Baileys library to interact with the WhatsApp Web API and supports multi-device features.
 
 It is lightweight and can be easily customized to add more commands as per your requirements. The bot runs in a Node.js environment and provides QR code-based authentication to link your WhatsApp account.
 
